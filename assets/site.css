@@ -30,16 +30,13 @@ body.dark {
   --line: #41413f;
 }
 a { color: inherit; }
-.skip-link { position: fixed; left: 1rem; top: -4rem; z-index: 10; background: var(--ink); color: var(--paper); padding: .6rem .9rem; }
-.skip-link:focus { top: 1rem; }
 .site-header, main, .site-footer { max-width: 1180px; margin: auto; }
 .site-header { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 2rem; }
 .wordmark { color: var(--ink); text-decoration: none; font-size: 1.6rem; font-weight: 800; letter-spacing: -.12em; }
 .wordmark span { color: var(--orange); }
-nav { display: flex; gap: 1.8rem; margin-left: auto; margin-right: 2rem; }
-nav a { color: var(--muted); font-size: .88rem; font-weight: 700; text-decoration: none; }
-nav a:hover, .text-link:hover { color: var(--orange); }
-.theme-toggle { display: flex; gap: .45rem; align-items: center; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 100vmax; padding: .42rem .75rem; font-family: var(--sans); font-size: .75rem; cursor: pointer; }
+.theme-toggle { display: grid; place-items: center; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 50%; width: 2.2rem; height: 2.2rem; padding: 0; font-family: var(--sans); font-size: 1rem; cursor: pointer; }
+main { min-height: calc(100vh - 5.4rem); position: relative; overflow: hidden; }
+main::after { content: ""; position: absolute; width: min(24vw, 270px); aspect-ratio: 1; border-radius: 47% 53% 39% 61% / 52% 39% 61% 48%; background: var(--orange); opacity: .9; right: 8%; bottom: 14%; transform: rotate(-18deg); }
 .hero { min-height: 69vh; padding: 9.5rem 2rem 6rem; position: relative; }
 .hero::after { content: ""; position: absolute; top: 16%; right: 4%; width: min(19vw, 210px); aspect-ratio: 1; background: var(--orange); border-radius: 47% 53% 39% 61% / 52% 39% 61% 48%; opacity: .94; transform: rotate(-18deg); z-index: -1; }
 .eyebrow, .post-meta, .project-number { color: var(--muted); font: 500 .72rem/1.3 var(--mono); letter-spacing: .08em; }
@@ -80,7 +77,6 @@ h2 { font-size: clamp(2.3rem, 4.5vw, 4.4rem); letter-spacing: -.07em; line-heigh
 
 @media (max-width: 680px) {
   .site-header { padding: 1.2rem; }
-  nav { display: none; }
   .hero { min-height: auto; padding: 6.5rem 1.25rem 4rem; }
   .hero::after { width: 120px; top: 10%; right: 8%; opacity: .45; }
   .section { padding: 4rem 1.25rem; }
@@ -89,4 +85,5 @@ h2 { font-size: clamp(2.3rem, 4.5vw, 4.4rem); letter-spacing: -.07em; line-heigh
   .post-card .text-link { margin-top: 1.2rem; }
   .project-card { min-height: 245px; }
   .site-footer { align-items: flex-start; flex-direction: column; gap: .4rem; padding: 1.4rem 1.25rem; }
+  main::after { width: 150px; right: 12%; bottom: 12%; }
 }
