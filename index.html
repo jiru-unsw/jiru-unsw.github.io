@@ -1,106 +1,24 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jiru 的个人笔记、项目与想法。">
+    <meta name="description" content="Jiru.">
     <meta name="theme-color" content="#f8f7f4">
-    <title>Jiru · Notes & Projects</title>
+    <title>Jiru</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/site.css">
   </head>
   <body>
-    <a class="skip-link" href="#content">跳到正文</a>
     <header class="site-header">
-      <a class="wordmark" href="./" aria-label="Jiru 首页">jir<span>u</span>.</a>
-      <nav aria-label="主导航">
-        <a href="#notes">笔记</a>
-        <a href="#projects">项目</a>
-        <a href="#about">关于</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-label="切换深浅色主题" aria-pressed="false">
-        <span aria-hidden="true">◐</span><span class="theme-label">深色</span>
+      <a class="wordmark" href="./" aria-label="Jiru home">jir<span>u</span>.</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+        <span aria-hidden="true">◐</span>
       </button>
     </header>
-
-    <main id="content">
-      <section class="hero" aria-labelledby="intro-title">
-        <p class="eyebrow">PERSONAL NOTEBOOK · 2026</p>
-        <h1 id="intro-title">把好奇心<br>写成可分享的<span>东西。</span></h1>
-        <p class="hero-copy">这里记录正在思考的问题、做过的项目，以及偶尔值得回看的小发现。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#notes">阅读笔记 <span aria-hidden="true">↓</span></a>
-          <a class="button quiet" href="https://github.com/jiru-unsw" rel="me">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="availability"><span></span> 欢迎交流与合作</p>
-      </section>
-
-      <section class="section notes" id="notes" aria-labelledby="notes-title">
-        <div class="section-heading">
-          <p class="eyebrow">01 / WRITING</p>
-          <h2 id="notes-title">最近笔记</h2>
-        </div>
-        <div class="post-list">
-          <article class="post-card featured">
-            <p class="post-meta">置顶 · 2026.10.26</p>
-            <h3><a href="posts/welcome.html">欢迎来到我的数字花园</a></h3>
-            <p>这是博客的第一篇文章：它会慢慢长成一份公开的工作记录，也留出足够空间容纳还没有答案的问题。</p>
-            <a class="text-link" href="posts/welcome.html">阅读全文 <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="post-card coming-soon">
-            <p class="post-meta">NEXT NOTE · 待发布</p>
-            <h3>下一篇，正在路上</h3>
-            <p>在这里写下你的研究、灵感、读书笔记或项目复盘。内容会比计划先抵达。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section projects" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">02 / BUILDING</p>
-          <h2 id="projects-title">项目橱窗</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card accent-orange">
-            <p class="project-number">01</p>
-            <h3>正在构思</h3>
-            <p>把你最想展示的作品放在这里：一句清晰的介绍，加一个链接，就足够开始。</p>
-            <span class="tag">Coming soon</span>
-          </article>
-          <article class="project-card accent-blue">
-            <p class="project-number">02</p>
-            <h3>实验与探索</h3>
-            <p>用它记录长期项目中的阶段性成果，既方便回顾，也方便遇见同路人。</p>
-            <span class="tag">In progress</span>
-          </article>
-          <article class="project-card accent-green">
-            <p class="project-number">03</p>
-            <h3>开放协作</h3>
-            <p>有可公开的代码或资料时，把链接补在这里，让好奇的人能继续往下走。</p>
-            <span class="tag">Open</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <div>
-          <p class="eyebrow">03 / HELLO</p>
-          <h2 id="about-title">你好，<br>我是 Jiru。</h2>
-        </div>
-        <div class="about-copy">
-          <p>这是一个留给思考与创造的安静角落。它不追求完整履历，而更关心那些值得被继续推进的想法。</p>
-          <p>如果你也在做有意思的事，欢迎在 GitHub 上找到我。</p>
-          <a class="text-link" href="https://github.com/jiru-unsw" rel="me">访问 GitHub 主页 <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year">2026</span> Jiru</p>
-      <p>Built with curiosity, not a template.</p>
-    </footer>
+    <main aria-hidden="true"></main>
     <script src="assets/site.js"></script>
   </body>
 </html>
